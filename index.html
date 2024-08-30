@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOXICONS para contacto -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Encriptador</title>
+
+    <!-- RESET - ESTILOS CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img class="logoImg" src="img/logo.png" alt="logo-Alura">
+            <h1 class="title">Encriptador de texto</h1>
+        </div>
+        <div class="left">
+            <input class="txt-input" id="inputTexto" type="text" placeholder="Ingrese el texto aquí..">
+        </div>
+        <div class="right">
+            <img id="img-derecha" src="img/Muñeco.png" alt="muñeco">
+            <h1 id="txt">Ningún mensaje encontrado</h1>
+            <textarea id="txt2" name="name" cols="80" rows="8"
+                placeholder="Ingrese el texto que desea encriptar / desencriptar."></textarea>
+            <button id="copiar" onclick="copiar()">Copiar texto</button>
+        </div>
+        <div class="boton">
+            <p><i class='bx bxs-error-circle'></i> Solo minúsculas y sin acentos</p>
+            <button type="button" id="encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Desarrollado por Maximiliano Galarza</p>
+
+        <div class="contacto">
+            <ul>
+                <li><a href="www.linkedin.com/in/maximilianogalarza" target="_blank"><i
+                            class='bx bxl-linkedin-square'></i></a></li>
+
+                <li><a href="https://github.com/Maxi-1g" target="_blank"><i class='bx bxl-github'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
